@@ -1,5 +1,5 @@
 {
-  "name": "eh-forms-course-demo",
+  "name": "11ty-sass-skeleton",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/5t3ph/eh-forms-course-demo.git"
+    "url": "git+https://github.com/5t3ph/11ty-sass-skeleton.git"
   },
   "author": "5t3ph",
   "license": "ISC",
