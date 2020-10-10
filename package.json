@@ -1,0 +1,33 @@
+{
+  "name": "eh-forms-course-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "sass  --no-source-map --watch src/sass:src/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/sass:src/css",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss src/css/*.css -u autoprefixer cssnano -r -m",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all --parallel build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5t3ph/eh-forms-course-demo.git"
+  },
+  "author": "5t3ph",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.1.0",
+    "sass": "^1.26.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
