@@ -1,9 +1,8 @@
 # dependencies installed by npm
 node_modules
 
-# build artefacts
+# build artifacts
 public
-css
 
 # secrets and errors
 .env
