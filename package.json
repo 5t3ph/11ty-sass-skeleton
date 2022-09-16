@@ -1,6 +1,6 @@
 {
   "name": "11ty-sass-skeleton",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.",
   "main": "index.html",
   "scripts": {
@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "lightningcss --minify --targets '> 0.25%, not IE 11' public/css/*.css -o public/css/*.css",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
@@ -19,17 +19,14 @@
   "author": "5t3ph",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "autoprefixer": "^10.4.2",
+    "@11ty/eleventy": "^1.0.2",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.17",
+    "lightningcss-cli": "^1.15.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.6",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.49.7"
+    "sass": "^1.54.9"
   },
   "browserslist": [
-    "> 0.5%",
+    "> 0.25%",
     "not IE 11"
   ]
 }
