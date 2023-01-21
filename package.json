@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "build:eleventy": "eleventy",
-    "postbuild": "lightningcss --minify --targets '> 0.25%, not IE 11' public/css/*.css -o public/css/*.css",
+    "postbuild": "BROWSERSLIST_CONFIG='./package.json' lightningcss --minify public/css/*.css -o public/css/*.css",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
