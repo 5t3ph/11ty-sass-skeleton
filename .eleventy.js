@@ -1,5 +1,7 @@
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss");
+
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/sass/");
+  eleventyConfig.addPlugin(eleventySass);
 
   return {
     dir: {

@@ -1,0 +1,12 @@
+$color: rebeccapurple;
+
+body {
+  font-family: system-ui;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: $color;
+  width: fit-content;
+  margin-inline: auto;
+}
