@@ -1,6 +1,6 @@
 {
   "name": "11ty-sass-skeleton",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.",
   "main": "index.html",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.3"
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.2.0"
   },
   "browserslist": [
     "> 0.2%",
